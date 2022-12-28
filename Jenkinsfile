@@ -7,7 +7,7 @@ pipeline{
     stage('1GetCode'){
       steps{
         sh "echo 'cloning the latest application version' "
-        git branch: 'feature', credentialsId: 'gitHubCredentials', url: 'https://github.com/magamudi/Web'
+        git branch: 'master', credentialsId: 'gitHubCredentials', url: 'https://github.com/magamudi/Web'
       }
     }
     stage('3Test+Build'){
